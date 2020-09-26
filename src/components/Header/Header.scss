@@ -1,0 +1,61 @@
+@import "../../common styles/variables.scss";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 $commonXpadding;
+    height: 80px;
+
+    &__navigation {
+        height: 100%;
+    }
+
+    &__button {
+        display: none;
+    }
+
+    &__mobile-menu {
+        display: none;
+        box-sizing: border-box;
+        transform: translateX(60vw);
+        transition: transform 0.3s;
+    }
+
+    &__mobile-menu--active {
+        display: block;
+        transform: translateX(0);
+    }
+} 
+
+@media screen and (min-width: 1960px) {
+    .header {
+        width: 1960px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        
+        &__navigation {
+            display: none;
+        }
+
+        &__button {
+            display: block;
+            position: relative;
+            z-index: 3;
+        }
+
+        &__mobile-menu {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 50vw;
+            background-color: white;
+            z-index: 2;
+            padding: $mobileMenuXpadding $mobileYMenuPadding;
+        }
+    }
+}

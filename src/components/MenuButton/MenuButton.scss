@@ -1,0 +1,51 @@
+.menu {
+
+    &__button {
+        position: relative;
+        z-index: 3;
+        display: block;
+        outline: none;
+        border: none;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    &__hamburger {
+        position: relative;
+        width: 40px;
+        height: 3px;
+        background-color: yellow;
+    }
+
+    &__hamburger::before,
+    &__hamburger::after {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 3px;
+        background-color: yellow;
+        left: 0;
+        transform-origin: left center;
+        transition: transform 0.3s;
+    }
+
+    &__hamburger::before {
+        top: 20px;
+    }
+
+    &__hamburger::after {
+        bottom: 20px;
+    }
+
+    &__hamburger--active {
+        background-color: white;
+    }
+
+    &__hamburger--active::before {
+        transform: rotate(-45deg) translate(7px, -1px);
+    }
+
+    &__hamburger--active::after {
+        transform: rotate(45deg) translate(7px, 1px);
+    }
+}

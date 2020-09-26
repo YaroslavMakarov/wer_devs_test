@@ -1,0 +1,43 @@
+.navigation {
+    display: flex;
+    height: 100%;
+
+    & :last-child {
+        margin-right: 0px;
+    }
+
+    &__link {
+        position: relative;
+        display: flex;
+        align-items: center;
+        color: black;
+        text-decoration: none;
+        margin-right: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    &__link--active::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: yellow;
+        bottom: 0;
+        right: calc(50% - 5px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .navigation {
+        flex-direction: column;
+
+        &__link {
+            width: fit-content;
+            height: 50px;
+            margin: 0 0 20px;
+        }
+    }
+}

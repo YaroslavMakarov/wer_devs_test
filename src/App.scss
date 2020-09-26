@@ -1,0 +1,14 @@
+.app {
+  text-align: center;
+}
+
+@media screen and (min-width: 1960px) {
+  .app {
+    display: flex;
+    justify-content: center;
+
+    &__container {
+      width: 1960px;
+    }
+  }
+}
