@@ -18,13 +18,11 @@
     &__mobile-menu {
         display: none;
         box-sizing: border-box;
-        transform: translateX(60vw);
-        transition: transform 0.3s;
     }
 
     &__mobile-menu--active {
         display: block;
-        transform: translateX(0);
+        animation: menuTranslate 0.3s linear forwards;
     }
 } 
 
@@ -57,5 +55,14 @@
             z-index: 2;
             padding: $mobileMenuXpadding $mobileYMenuPadding;
         }
+    }
+}
+
+@keyframes menuTranslate {
+    from {
+        width: 0;;
+    }
+    to {
+        width: 50vw;
     }
 }

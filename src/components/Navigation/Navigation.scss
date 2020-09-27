@@ -37,7 +37,27 @@
         &__link {
             width: fit-content;
             height: 50px;
-            margin: 0 0 20px;
+            display: none;
+            opacity: 0;
         }
+
+        &__link--mobile {
+            display: block;
+            animation: animateLink 0.5s linear forwards;
+        }
+    }
+}
+
+@keyframes animateLink {
+    0% {
+
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
     }
 }

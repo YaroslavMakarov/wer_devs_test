@@ -1,8 +1,14 @@
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import cn from "classnames";
 import "./Navigation.scss";
 
-const Navigation = () => {
+type Props = {
+    isActiveMenu?: boolean;
+    toggleIsActiveMenu?: (arg: boolean) => void;
+}
+
+const Navigation:React.FC<Props> = ({ isActiveMenu, toggleIsActiveMenu }) => {
     const location = useLocation();
 
     return (
@@ -10,11 +16,21 @@ const Navigation = () => {
             <NavLink
                 to="/"
                 exact
-                className="navigation__link"
+                className={cn(
+                    "navigation__link",
+                    {
+                        "navigation__link--mobile": isActiveMenu,
+                    }
+                )}
                 activeClassName={
                     location.pathname === "/"
                     ? "navigation__link--active"
                     : ""
+                }
+                onClick={
+                    (typeof toggleIsActiveMenu === "function")
+                    ? () => toggleIsActiveMenu(false)
+                    : undefined
                 }
             >
                 home
@@ -22,8 +38,18 @@ const Navigation = () => {
             <NavLink
                 to="/about"
                 exact
-                className="navigation__link"
+                className={cn(
+                    "navigation__link",
+                    {
+                        "navigation__link--mobile": isActiveMenu,
+                    }
+                )}
                 activeClassName="navigation__link--active"
+                onClick={
+                    (typeof toggleIsActiveMenu === "function")
+                    ? () => toggleIsActiveMenu(false)
+                    : undefined
+                }
             >
                 about us
             </NavLink>

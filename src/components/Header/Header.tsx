@@ -31,7 +31,10 @@ const Header = () => {
                     "header__mobile-menu--active": isActiveMenu,
                 }
             )}>
-                <MobileMenu />
+                <MobileMenu
+                    isActiveMenu={isActiveMenu}
+                    toggleIsActiveMenu={toggleIsActiveMenu}
+                 />
             </div> 
         </Container>
     );
