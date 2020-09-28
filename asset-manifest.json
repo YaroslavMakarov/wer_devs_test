@@ -1,24 +1,26 @@
 {
   "files": {
-    "main.css": "/wer_devs_test/static/css/main.ec9529ac.chunk.css",
-    "main.js": "/wer_devs_test/static/js/main.c98538f5.chunk.js",
-    "main.js.map": "/wer_devs_test/static/js/main.c98538f5.chunk.js.map",
+    "main.css": "/wer_devs_test/static/css/main.f6f39c82.chunk.css",
+    "main.js": "/wer_devs_test/static/js/main.673963ad.chunk.js",
+    "main.js.map": "/wer_devs_test/static/js/main.673963ad.chunk.js.map",
     "runtime-main.js": "/wer_devs_test/static/js/runtime-main.1b80b884.js",
     "runtime-main.js.map": "/wer_devs_test/static/js/runtime-main.1b80b884.js.map",
-    "static/js/2.152f81a6.chunk.js": "/wer_devs_test/static/js/2.152f81a6.chunk.js",
-    "static/js/2.152f81a6.chunk.js.map": "/wer_devs_test/static/js/2.152f81a6.chunk.js.map",
+    "static/js/2.9fbfa99a.chunk.js": "/wer_devs_test/static/js/2.9fbfa99a.chunk.js",
+    "static/js/2.9fbfa99a.chunk.js.map": "/wer_devs_test/static/js/2.9fbfa99a.chunk.js.map",
     "index.html": "/wer_devs_test/index.html",
-    "precache-manifest.72d5cd375a17b8a884b7afa227e0ed3a.js": "/wer_devs_test/precache-manifest.72d5cd375a17b8a884b7afa227e0ed3a.js",
+    "precache-manifest.b885be08903142eb9065ffc0e6360adb.js": "/wer_devs_test/precache-manifest.b885be08903142eb9065ffc0e6360adb.js",
     "service-worker.js": "/wer_devs_test/service-worker.js",
-    "static/css/main.ec9529ac.chunk.css.map": "/wer_devs_test/static/css/main.ec9529ac.chunk.css.map",
-    "static/js/2.152f81a6.chunk.js.LICENSE.txt": "/wer_devs_test/static/js/2.152f81a6.chunk.js.LICENSE.txt",
+    "static/css/main.f6f39c82.chunk.css.map": "/wer_devs_test/static/css/main.f6f39c82.chunk.css.map",
+    "static/js/2.9fbfa99a.chunk.js.LICENSE.txt": "/wer_devs_test/static/js/2.9fbfa99a.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/wer_devs_test/static/media/Montserrat-Thin.43dd5b7a.ttf",
-    "static/media/logo.svg": "/wer_devs_test/static/media/logo.b1a38376.svg"
+    "static/media/left-arrow.svg": "/wer_devs_test/static/media/left-arrow.72720cdd.svg",
+    "static/media/logo.svg": "/wer_devs_test/static/media/logo.b1a38376.svg",
+    "static/media/next.svg": "/wer_devs_test/static/media/next.63363abe.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.1b80b884.js",
-    "static/js/2.152f81a6.chunk.js",
-    "static/css/main.ec9529ac.chunk.css",
-    "static/js/main.c98538f5.chunk.js"
+    "static/js/2.9fbfa99a.chunk.js",
+    "static/css/main.f6f39c82.chunk.css",
+    "static/js/main.673963ad.chunk.js"
   ]
 }
