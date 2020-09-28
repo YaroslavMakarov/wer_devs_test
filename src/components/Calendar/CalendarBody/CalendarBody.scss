@@ -1,0 +1,32 @@
+@import "../../../common styles/variables.scss";
+@import "../../../common styles/extends.scss";
+
+.calendar-body {
+    width: $calendarBodyWidth;
+    padding: 15px 0;
+
+    &__week {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__day {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        @extend %calendar-font-styles;
+        transition: background-color 0.3s;
+    }
+
+    &__day:hover {
+        background-color: #f7be02;
+    }
+
+    &__blur-day {
+        color: rgba(156, 167, 184, 0.4);
+    }
+}

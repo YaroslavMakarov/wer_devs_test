@@ -1,0 +1,10 @@
+@import "../../common styles/variables.scss";
+
+.calendar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 33vw;
+    height: $contentHeight;
+}

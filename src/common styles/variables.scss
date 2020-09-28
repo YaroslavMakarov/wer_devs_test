@@ -1,5 +1,16 @@
 $commonXpadding: 30px;
 
+//header
+$headerHeight: 80px;
+
 //mobile menu
 $mobileMenuXpadding: 70px;
 $mobileYMenuPadding: 20px;
+
+//calendar
+$calendarTextColor: #9ca7b8;
+$calendarBodyWidth: 300px;
+
+//main content
+$contentHeight: calc(100vh - 80px); //80 height header
+ 

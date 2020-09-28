@@ -42,10 +42,10 @@
     }
 
     &__hamburger--active::before {
-        transform: rotate(-45deg) translate(7px, -1px);
+        transform: rotate(-45deg) translate(5px, 3px);
     }
 
     &__hamburger--active::after {
-        transform: rotate(45deg) translate(7px, 1px);
+        transform: rotate(45deg) translate(5px, -3px);
     }
 }
