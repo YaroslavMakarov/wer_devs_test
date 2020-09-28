@@ -2,8 +2,13 @@
 @import "../../../common styles/extends.scss";
 
 .calendar-body {
+    position: relative;
     width: $calendarBodyWidth;
     padding: 15px 0;
+
+    & :last-child:after {
+        @extend %calendar-parts-underline;
+    }
 
     &__week {
         width: 100%;
@@ -28,5 +33,9 @@
 
     &__blur-day {
         color: rgba(156, 167, 184, 0.4);
+    }
+
+    &__current-date {
+        background-color: #fad102;
     }
 }

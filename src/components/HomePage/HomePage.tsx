@@ -1,12 +1,16 @@
 import React from "react";
 import Calendar from "../Calendar/Calendar";
+import MainContent from "../MainContent/MainContent";
 import "./HomePage.scss";
 
 const HomePage = () => {
     return (
-        <>
-            <Calendar />
-        </>
+        <div className="home-page">
+            <MainContent />
+            <div className="home-page__calendar">
+                <Calendar />
+            </div>
+        </div>
     );
 }
 

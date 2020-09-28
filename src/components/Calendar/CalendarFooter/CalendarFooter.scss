@@ -1,0 +1,22 @@
+@import "../../../common styles/extends.scss";
+@import "../../../common styles/variables.scss";
+
+.calendar-footer {
+    display: flex;
+    justify-content: space-between;
+    width: $calendarBodyWidth;
+    position: relative;
+
+    &::after {
+        @extend %calendar-parts-underline;
+    }
+
+    &__cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    @extend %calendar-font-styles;
+    }
+}

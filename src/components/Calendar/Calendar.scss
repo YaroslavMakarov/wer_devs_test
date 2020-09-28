@@ -3,8 +3,10 @@
 .calendar {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+    padding-top: $contentTopPadding;
     width: 33vw;
     height: $contentHeight;
+    background-color: #41434a;
+    box-sizing: border-box;
 }

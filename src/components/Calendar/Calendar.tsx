@@ -3,30 +3,33 @@ import {useSelector, useDispatch } from "react-redux";
 import { fillArrayDates } from "../../helpers/helpers";
 import { addMonthDates, AllCalendarAction } from "../../store/calendarStore";
 import { firstDaySelector,
-         monthDatesSelector,
          nextMonthSelector 
         } from "../../store/rootStore";
 import "./Calendar.scss";
 import CalendarBody from "./CalendarBody/CalendarBody";
+import CalendarFooter from "./CalendarFooter/CalendarFooter";
 import HeaderCalendar from "./HeaderCalendar/HeaderCalendar";
 
 const Calendar = () => {
-    const monthDates = useSelector(monthDatesSelector);
     const firstDay = useSelector(firstDaySelector);
     const nextMonth = useSelector(nextMonthSelector);
     const calendarDispatch = useDispatch<Dispatch<AllCalendarAction>>();
 
     useEffect(() => {
-        calendarDispatch(addMonthDates(fillArrayDates(firstDay, nextMonth)))
+        calendarDispatch(addMonthDates(fillArrayDates(firstDay, nextMonth)));
     }, [])
 
-    console.log(monthDates);
+    useEffect(() => {
+        calendarDispatch(addMonthDates(fillArrayDates(firstDay, nextMonth)));
+    }, [firstDay, nextMonth]);
+
     
 
     return (
         <div className="calendar">
             <HeaderCalendar />
-            <CalendarBody />    
+            <CalendarBody />  
+            <CalendarFooter />  
         </div>
     );
 }

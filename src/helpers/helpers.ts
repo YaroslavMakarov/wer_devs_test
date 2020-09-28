@@ -41,3 +41,13 @@ export const month: string[] = [
     'November',
     'December',
 ];
+
+export const days: string[] = [
+    'S',
+    'M',
+    'T',
+    'W',
+    'T',
+    'F',
+    'S',
+];

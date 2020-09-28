@@ -1,0 +1,59 @@
+@import "../../common styles/variables.scss";
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 67vw;
+    height: $contentHeight;
+    background-image: url("../../assets/img/main-background.jpg");
+    background-repeat: no-repeat;
+    background-size: 140% 130%;
+    background-position: 10% 45%;
+    padding: $contentTopPadding $contentRightPadding 0 0;
+    box-sizing: border-box;
+
+    &__header {
+        width: 350px;
+        font-size: 32px;
+        font-weight: 900;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        text-align: right;
+        color: #fad102;
+    }
+
+    &__text {
+        font-weight: 300;
+        width: 300px;
+        color: white;
+        text-align: right;
+    }
+
+    &__link {
+        display: none;
+        padding: 10px;
+        border-radius: 15px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fad102;
+        transition: background-position 0.5s;
+        background-size: 200% auto;
+        background-image: linear-gradient(to right, rgb(96, 108, 136) 0%, rgb(63, 76, 107) 51%, rgb(96, 108, 136) 100%);
+    }
+
+    &__link:hover {
+        background-position: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main-content {
+        width: 100vw;
+        background-size: 100% 100%;
+
+        &__link {
+            display: block;
+        }
+    }
+}
