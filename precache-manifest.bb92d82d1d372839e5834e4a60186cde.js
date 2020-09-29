@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "86cc425ce59f509ec77803dbc960366f",
+    "revision": "b416a1dcd7638ee21997ca75d5026b63",
     "url": "/wer_devs_test/index.html"
   },
   {
-    "revision": "1b65893a8518fe37974e",
-    "url": "/wer_devs_test/static/css/main.acfa8d51.chunk.css"
+    "revision": "862cc0fda4c128b9f7f6",
+    "url": "/wer_devs_test/static/css/main.4f61a68d.chunk.css"
   },
   {
-    "revision": "9ef70b7d0776f9ad5bc9",
-    "url": "/wer_devs_test/static/js/2.fc381b94.chunk.js"
+    "revision": "940a42c085f0e1f53655",
+    "url": "/wer_devs_test/static/js/2.a6ffffee.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/wer_devs_test/static/js/2.fc381b94.chunk.js.LICENSE.txt"
+    "url": "/wer_devs_test/static/js/2.a6ffffee.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1b65893a8518fe37974e",
-    "url": "/wer_devs_test/static/js/main.464ce4e1.chunk.js"
+    "revision": "862cc0fda4c128b9f7f6",
+    "url": "/wer_devs_test/static/js/main.e1eb7295.chunk.js"
   },
   {
     "revision": "ae4e3e58208740f259cc",
@@ -58,6 +58,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "43dd5b7a3d277362d5e801e5353e3a01",
     "url": "/wer_devs_test/static/media/Montserrat-Thin.43dd5b7a.ttf"
+  },
+  {
+    "revision": "7d0df1eebac509560d8ff21af50a0461",
+    "url": "/wer_devs_test/static/media/cross.7d0df1ee.svg"
   },
   {
     "revision": "72720cdda7f5aca503b16292799017ba",
