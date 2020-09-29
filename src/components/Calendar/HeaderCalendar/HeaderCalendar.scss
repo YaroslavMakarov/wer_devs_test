@@ -2,8 +2,6 @@
 @import "../../../common styles/variables.scss";
 
 .calendar-head {
-    display: flex;
-    justify-content: space-between;
     position: relative;
     padding: 10px 0;
     box-sizing: border-box;
@@ -13,23 +11,45 @@
         @extend %calendar-parts-underline;
     }
 
-    &__button {
+    &__wrapper {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba(0, 0, 0, 0);
-        outline: none;
-        border: none;
-        padding: 0;
-        cursor: pointer;
+        justify-content: space-between;
+    }
+
+    &__button {
+        @extend %styles-for-button;
+    }
+
+    &__history-button {
+        display: none;
+        margin-bottom: 30px;
     }
 
     &__button-icon {
         width: 15px;
         height: 15px;
+        transition: transform 0.3s;
+    }
+
+    &__history-button:hover &__button-icon {
+        transform: translateX(-3px);
     }
 
     &__text {
         @extend %calendar-font-styles;
+    }
+
+    &__history-text {
+        @extend %calendar-font-styles;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .calendar-head {
+
+        &__history-button {
+            display: block;
+        }
     }
 }

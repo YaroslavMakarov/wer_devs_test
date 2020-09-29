@@ -10,3 +10,15 @@
     background-color: #41434a;
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 1024px) {
+    .calendar {
+        width: 100vw;
+        min-height: 430px;
+        padding-top: $contentMobileTopPadding;
+
+        &__link {
+            display: block;
+        }
+    }
+}

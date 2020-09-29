@@ -39,6 +39,7 @@
             height: 50px;
             display: none;
             opacity: 0;
+            -khtml-opacity: 0;
         }
 
         &__link--mobile {
@@ -55,9 +56,11 @@
 
     50% {
         opacity: 0;
+        -khtml-opacity: 0;
     }
 
     100% {
         opacity: 100%;
+        -khtml-opacity: 100%;
     }
 }

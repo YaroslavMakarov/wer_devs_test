@@ -3,7 +3,12 @@ import Calendar from "../Calendar/Calendar";
 import MainContent from "../MainContent/MainContent";
 import "./HomePage.scss";
 
-const HomePage = () => {
+type Calendar = {
+    calendar: string | undefined;
+};
+
+const HomePage = () => {  
+
     return (
         <div className="home-page">
             <MainContent />

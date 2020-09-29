@@ -6,7 +6,7 @@
     width: $calendarBodyWidth;
     padding: 15px 0;
 
-    & :last-child:after {
+    &::after {
         @extend %calendar-parts-underline;
     }
 
@@ -17,6 +17,7 @@
     }
 
     &__day {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -36,6 +37,17 @@
     }
 
     &__current-date {
+        background-color: #fad102;
+    }
+
+    &__meeting::after {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        bottom: 5px;
+        right: calc(50% - 3px);
         background-color: #fad102;
     }
 }

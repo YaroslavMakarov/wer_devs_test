@@ -5,8 +5,11 @@ import { days } from "../../../helpers/helpers";
 const CalendarFooter = () => {
     return (
         <div className="calendar-footer">
-            {days.map(day => (
-                <div className="calendar-footer__cell">
+            {days.map((day, i) => (
+                <div
+                    className="calendar-footer__cell"
+                    key={i}
+                >
                     {day}
                 </div>
             ))}

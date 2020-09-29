@@ -51,3 +51,13 @@ export const days: string[] = [
     'F',
     'S',
 ];
+
+export const fullDaysName: string[] = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+];

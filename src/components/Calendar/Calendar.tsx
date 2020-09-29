@@ -14,6 +14,7 @@ const Calendar = () => {
     const firstDay = useSelector(firstDaySelector);
     const nextMonth = useSelector(nextMonthSelector);
     const calendarDispatch = useDispatch<Dispatch<AllCalendarAction>>();
+    
 
     useEffect(() => {
         calendarDispatch(addMonthDates(fillArrayDates(firstDay, nextMonth)));

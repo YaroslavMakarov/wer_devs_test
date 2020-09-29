@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./MainContent.scss";
 
 const MainContent  = () => {
+
     return (
         <div className="main-content">
             <h1 className="main-content__header">

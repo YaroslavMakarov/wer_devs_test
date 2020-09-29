@@ -51,9 +51,28 @@
     .main-content {
         width: 100vw;
         background-size: 100% 100%;
+        padding: $contentMobileTopPadding $contentRightPadding 0 0;
+        min-height: 375px;
 
         &__link {
             display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .main-content {
+
+        &__header {
+            width: 300px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        &__text {
+            font-size: 20px;
+            font-weight: 300;
+            width: 280px;
         }
     }
 }
