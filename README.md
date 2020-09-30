@@ -7,3 +7,4 @@ Technologies:
 * BEM
 * React/Redux
 * TypeScript
+* React-Router-Dom
